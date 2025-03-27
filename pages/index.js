@@ -58,26 +58,26 @@ export default function Home() {
       />
 
       {/* 中央のコンテンツ */}
-      <main className="z-10 flex items-center gap-6 px-6 sm:px-12 text-left">
+      <main className="z-10 flex flex-col sm:flex-row items-center sm:items-start gap-6 px-4 sm:px-12 text-left">
         {/* 左側：アイコン */}
         <Image
           src="/KAZUTTI.png"
           alt="Kazutti Icon"
-          width={160}
-          height={100}
-          className="rounded-full shadow-lg"
+          width={120}
+          height={120}
+          className="rounded-full shadow-lg w-24 sm:w-40 h-auto"
         />
 
-        {/* 右側：名前＋自己紹介 */}
-        <div>
-          <h1 className="text-7xl font-bold bg-gradient-to-r from-pink-400 via-pink-300 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
-            Kazutti
-          </h1>
-          <p className="bg-white/10 text-pink-100 text-xl rounded-xl p-4 max-w-md border border-white/20 shadow-md backdrop-blur-sm min-h-[3.5rem]">
-            {typedText}
-            <span className="animate-pulse">|</span>
-          </p>
-        </div>
+        {/* 右側：名前＋チャット */}
+          <div className="text-center sm:text-left mt-4 sm:mt-0">
+            <h1 className="text-4xl sm:text-7xl font-bold bg-gradient-to-r from-pink-400 via-pink-300 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
+              Kazutti
+            </h1>
+              <p className="mt-2 bg-white/10 text-pink-100 text-base sm:text-xl rounded-xl p-4 max-w-md border border-white/20 shadow-md backdrop-blur-sm">
+                {typedText}
+                  <span className="animate-pulse">|</span>
+              </p>
+            </div>
       </main>
 
       <footer className="absolute bottom-4 text-sm text-gray-400 w-full text-center z-10">
