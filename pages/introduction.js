@@ -11,8 +11,8 @@ export default function Introduction() {
 
       <div className="text-lg text-center text-pink-100 max-w-2xl mb-16 leading-loose space-y-8">
         <p>
-          Hi, I'm <strong>Kazutti</strong>.<br />
-          I'm currently studying architecture at university while enjoying hobbies like running a Minecraft server,
+          Hi, I&apos;m <strong>Kazutti</strong>.<br />
+          I&apos;m currently studying architecture at university while enjoying hobbies like running a Minecraft server,
           developing plugins, and working on web projects.
         </p>
         <p>
@@ -20,8 +20,8 @@ export default function Introduction() {
           I support players and develop original plugins as a way to grow my skills while having fun.
         </p>
         <p>
-          I've been running since elementary school,<br />
-          and recently I've been into the music of <strong>BLOOM VASE</strong>.
+          I&apos;ve been running since elementary school,<br />
+          and recently I&apos;ve been into the music of <strong>BLOOM VASE</strong>.
         </p>
       </div>
 
@@ -46,7 +46,7 @@ export default function Introduction() {
             <h2 className="text-xl font-semibold">Server Management</h2>
           </div>
           <p className="text-pink-100 text-sm">
-            I operate and manage the Minecraft server <strong>"Rearth"</strong>,
+            I operate and manage the Minecraft server <strong>&quot;Rearth&quot;</strong>,
             providing support, maintenance, and development of original features.
           </p>
         </div>
