@@ -1,12 +1,11 @@
-// pages/i
-// ntroduction.js
+// pages/introduction.js
 import { FaCode, FaServer } from "react-icons/fa";
 
 export default function Introduction() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#2c0036] to-[#1a0d1f] text-white px-4 py-16 flex flex-col items-center">
       <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-400 via-pink-300 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-lg">
-      Introduction
+        Introduction
       </h1>
       <div className="w-16 h-1 bg-pink-400 rounded-full mb-8"></div>
 
