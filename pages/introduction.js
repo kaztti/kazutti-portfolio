@@ -6,7 +6,7 @@ export default function Introduction() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] text-white px-4 py-12 sm:py-16 flex flex-col items-center relative overflow-hidden">
       {/* 背景のプログラミングコード風要素 */}
-      <div className="absolute inset-0 z-0 opacity-5 select-none pointer-events-none font-mono text-xs text-green-300 whitespace-pre-line leading-relaxed px-4 sm:px-8">
+      <div className="absolute inset-0 z-0 opacity-10 select-none pointer-events-none font-mono text-xs text-green-300 whitespace-pre-line leading-relaxed px-4 sm:px-8">
         {`const runner = "Kazutti";
 let passion = ["Architecture", "Minecraft", "WebDev", "Running"];
 function grow(skills) {
@@ -19,12 +19,12 @@ console.log("Keep running and coding!");`}
       </div>
 
       {/* 駅伝ロゴの背景イメージ（回転・濃く表示） */}
-      <div className="absolute bottom-20 right-4 sm:right-20 z-0 opacity-80 animate-spin-slower">
+      <div className="absolute bottom-20 right-4 sm:right-20 z-0 opacity-80 ">
         <Image src="/1770477.png" alt="Ekiden Logo" width={400} height={400} />
       </div>
 
       {/* マイクラロゴの背景イメージ（Developmentカード付近に移動） */}
-      <div className="absolute top-[250px] left-[-10px] sm:left-[calc(50%-560px)] z-0 opacity-60">
+      <div className="absolute top-[250px] left-[-10px] sm:left-[calc(50%-560px)] z-0 opacity-90 animate-pulse">
         <Image src="/Rearth.png" alt="Minecraft Logo" width={204} height={240} />
       </div>
 
