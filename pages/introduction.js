@@ -23,6 +23,11 @@ console.log("Keep running and coding!");`}
         <Image src="/1770477.png" alt="Ekiden Logo" width={440} height={440} />
       </div>
 
+       {/* マイクラロゴの背景イメージ（上部に設置） */}
+       <div className="absolute bottom-[440px] left-[calc(50%-520px)] z-0 opacity-50 animate-pulse">
+        <Image src="/Rearth.png" alt="Minecraft Logo" width={200} height={0} />
+      </div>
+
       <h1 className="relative z-10 text-5xl font-bold bg-gradient-to-r from-pink-400 via-pink-300 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-lg">
         Introduction
       </h1>
@@ -34,7 +39,7 @@ console.log("Keep running and coding!");`}
           大学では建築を学びながら、趣味で Minecraft サーバーの運営や、プログラミングをやっています。また、空いた時間にジョギングもしています。
         </p>
         <p>
-          自身が運営している Minecraft サーバー <strong>Rearth</strong> では、<br />
+          自身が運営している Minecraft サーバー <strong>らーす鯖</strong> では、<br />
           プレイヤーのサポートやプラグインの開発を通じて、<br />
           日々技術力を向上させています。
         </p>
@@ -54,7 +59,7 @@ console.log("Keep running and coding!");`}
             <h2 className="text-xl font-semibold">Development</h2>
           </div>
           <p className="text-pink-100 text-sm">
-            Java、JavaScript、SQLite などを使って、自身のウェブサイトや Minecraft のプラグインを作っています。
+            Java、JavaScript、SQLite などを使って、自身のウェブサイトや Minecraft のプラグインを作っています。プログラミング歴は１年ぐらいです。
           </p>
         </div>
 
@@ -66,8 +71,8 @@ console.log("Keep running and coding!");`}
             <h2 className="text-xl font-semibold">Server Management</h2>
           </div>
           <p className="text-pink-100 text-sm">
-            Minecraft サーバー <strong>「Rearth」</strong> を運営していて、
-            サポートやメンテナンス、コンテンツ追加なども行っています。
+            Minecraft サーバー <strong>「らーす鯖」</strong> を運営していて、
+            サポートやメンテナンス、コンテンツ追加なども行っています。あんなこんなで今年で３年目になるらしい。
           </p>
         </div>
 
