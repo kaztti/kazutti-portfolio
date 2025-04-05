@@ -1,10 +1,42 @@
 // pages/introduction.js
 import { FaCode, FaServer, FaRunning, FaHandshake } from "react-icons/fa";
 import Image from "next/image";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { useCallback } from "react";
 
 export default function Introduction() {
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] text-white px-4 py-12 sm:py-16 flex flex-col items-center relative overflow-hidden">
+      {/* 粒子背景 */}
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        className="absolute inset-0 z-0"
+        options={{
+          background: { color: "transparent" },
+          fpsLimit: 60,
+          interactivity: {
+            events: { onHover: { enable: false, mode: "repulse" } },
+            modes: { repulse: { distance: 100, duration: 0.4 } },
+          },
+          particles: {
+            color: { value: "#ffffff" },
+            links: { enable: true, color: "#ffffff", distance: 150, opacity: 0.2, width: 1 },
+            move: { enable: true, speed: 1, direction: "none", random: false, straight: false, outModes: { default: "out" } },
+            number: { value: 50, density: { enable: true, area: 800 } },
+            opacity: { value: 0.3 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 3 } },
+          },
+          detectRetina: true,
+        }}
+      />
+
       {/* 背景のプログラミングコード風要素 */}
       <div className="absolute inset-0 z-0 opacity-5 select-none pointer-events-none font-mono text-xs text-green-300 whitespace-pre-line leading-relaxed px-4 sm:px-8">
         {`const runner = "Kazutti";
@@ -21,11 +53,6 @@ console.log("Keep running and coding!");`}
       {/* 駅伝ロゴの背景イメージ（回転・濃く表示） */}
       <div className="absolute bottom-20 right-4 sm:right-20 z-0 opacity-80 ">
         <Image src="/1770477.png" alt="Ekiden Logo" width={400} height={400} />
-      </div>
-
-      {/* マイクラロゴの背景イメージ（Developmentカード付近に移動） */}
-      <div className="hidden sm:block absolute top-[250px] left-[-10px] sm:left-[calc(50%-560px)] z-0 opacity-90 animate-pulse">
-        <Image src="/Rearth.png" alt="Minecraft Logo" width={204} height={240} />
       </div>
 
       <h1 className="relative z-10 text-3xl sm:text-5xl font-bold bg-gradient-to-r from-pink-400 via-pink-300 to-pink-500 bg-clip-text text-transparent mb-4 drop-shadow-lg">
