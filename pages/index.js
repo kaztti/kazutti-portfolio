@@ -103,7 +103,7 @@ export default function Home() {
             className="bg-white/5 hover:bg-white/10 transition-colors rounded-xl p-6 flex flex-col items-center justify-center shadow border border-white/10"
           >
             <FaUser className="text-pink-300 text-3xl mb-3" />
-            <span className="text-white font-medium">Introduction</span>
+            <span className="text-white font-medium">Self Introduction</span>
           </Link>
           <Link
             href="/projects"
